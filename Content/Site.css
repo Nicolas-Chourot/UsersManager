@@ -1,0 +1,99 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* Application styles */
+
+.glyphiconStyle {
+    font-size: large !important;
+    margin-right: 4px !important;
+}
+
+/* Layout styles */
+
+.userListLayout {
+    display: grid;
+    grid-template-columns: 55px 20% 15% 15% 15% 80px;
+}
+
+.headTitle {
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    display: table-cell;
+    margin-bottom: -10px;
+}
+
+.textCell {
+    padding-top: 12px;
+    padding-right: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.headIcon {
+}
+
+.iconCell {
+    padding-top: 12px;
+}
+
+/** Images styles **/
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin-bottom: 5px;
+}
+
+.bigAvatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+}
+
+.avatarContainer {
+    height: 100%;
+    width: 100%;
+    background-color: gray;
+}
+
+.UploadedImage {
+    max-width: 100%;
+}
+
+.imageSize {
+    width: 450px;
+    height: 338px;
+}
+
+.imageContainer {
+    height: 100%;
+    width: 100%;
+}

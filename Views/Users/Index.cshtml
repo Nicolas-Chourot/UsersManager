@@ -1,0 +1,39 @@
+﻿@model IEnumerable<UsersManager.Models.User>
+
+@{
+    ViewBag.Title = "Index";
+}
+<h1>@ViewBag.Salutations</h1>
+<h2>Liste des usagers</h2>
+
+<hr />
+<div class="userListLayout">
+    <div class="headTitle"> @Helper.GlyphiconAction("Create", "glyphicon-plus", "Ajout d'un usager")</div>
+    <div class="headTitle"> @Html.DisplayNameFor(model => model.FullName) </div>
+    <div class="headTitle"> @Html.DisplayNameFor(model => model.Country) </div>
+    <div class="headTitle"> @Html.DisplayNameFor(model => model.Phone)</div>
+    <div class="headTitle"> @Html.DisplayNameFor(model => model.Permissions)</div>
+    <div class="headIcon"> </div>
+</div>
+<hr />
+<div class="userListLayout">
+    @foreach (var item in Model)
+    {
+        <div> &nbsp; </div>
+
+        <div class="textCell"> <a href="mailto:@item.Email">@item.FullName</a> </div>
+
+        <div class="textCell"> @item.Country.Name </div>
+
+        <div class="textCell"> @Html.DisplayFor(modelItem => item.Phone) </div>
+
+        <div class="textCell"> @Html.DisplayFor(modelItem => item.Permissions) </div>
+
+        <div class="iconCell">
+            @Helper.GlyphiconAction("Edit/" + item.Id.ToString(), "glyphicon-edit", "Modifier " + @item.FullName + "...")
+            @Helper.GlyphiconAction("Details/" + item.Id.ToString(), "glyphicon-eye-open", "Détails sur " + @item.FullName + "...")
+            @Helper.GlyphiconAction("Delete/" + item.Id.ToString(), " glyphicon-remove-circle", "Effacer " + @item.FullName + "...")
+        </div>
+    }
+
+</div>

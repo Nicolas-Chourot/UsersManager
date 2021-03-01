@@ -1,0 +1,52 @@
+[
+  {
+    "Id": 1,
+    "FullName": "Nicolas Chourot",
+    "Email": "Nicolas.Chourot@clg.qc.ca",
+    "Password": "123123",
+    "Phone": "(514) 403-4015",
+    "Permissions": 2,
+    "CreationDate": "2021-02-16T16:51:54",
+    "CountryId": 64
+  },
+  {
+    "Id": 2,
+    "FullName": "Warda Moussadak",
+    "Email": "Warda-Moussadak@clg.qc.ca",
+    "Password": "123123",
+    "Phone": "(123) 456-7890",
+    "Permissions": 1,
+    "CreationDate": "2021-02-19T14:02:39",
+    "CountryId": 4
+  },
+  {
+    "Id": 3,
+    "FullName": "Stéphane Chassé",
+    "Email": "Stephane.Chasse@clg.qc.ca",
+    "Password": "password",
+    "Phone": "(450) 345-3451",
+    "Permissions": 0,
+    "CreationDate": "2021-02-19T14:22:46",
+    "CountryId": 81
+  },
+  {
+    "Id": 4,
+    "FullName": "Patrice Roy",
+    "Email": "Patrice.Roy@clg.qc.ca",
+    "Password": "password",
+    "Phone": "(101) 010-1010",
+    "Permissions": 1,
+    "CreationDate": "2021-02-19T14:32:14",
+    "CountryId": 41
+  },
+  {
+    "Id": 5,
+    "FullName": "Saliha Yacoub",
+    "Email": "Saliha.Yacoub@clg.qc.ca",
+    "Password": "password",
+    "Phone": "(123) 333-2323",
+    "Permissions": 0,
+    "CreationDate": "2021-02-19T14:36:17",
+    "CountryId": 4
+  }
+]
